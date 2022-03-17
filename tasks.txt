@@ -1,0 +1,42 @@
+On main.py
+pyinstaller -F -n AIO  --noupx -c -i NONE main.py
+1.on the calculation parts
+use this 
+
+>> Int checker <<
+
+userInput = 0
+print(" ")
+while True:
+  try:
+     userInput = int(input(" >> "))       
+  except ValueError:
+     print("Not an integer!")
+     continue
+  else:
+     print("Yes an integer!")
+     break 
+
+
+>> Check if file exists <<
+
+print(" Enter the name of your file (case sensitive)")
+nameyy = str(input(" >> "))
+isitt = nameyy # Add this to add extention of file or smth + ".key"
+isit = str(os.path.exists(isitt))
+while isit == "False":
+    print(" Dude, that stuff doesn't exist")
+    print(" Type the name again!!")
+    nameyy = str(input(" >> "))
+    isitt = nameyy # Add this to add extention of file or smth + ".key"
+    isit = str(os.path.exists(isitt))
+
+
+
+2 pass_safe.py
+make users 
+pass file e username soho password hashed thaakbe
+ar username locate kore porer line password dhore oitar sathe match korbe
+username ar password 2 tai hashed thakbe
+
+
